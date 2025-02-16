@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정부24 모바일 웹사이트</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript">
+        // F12 버튼 방지
+        $(document).ready(function(){
+            $(document).bind('keydown',function(e){
+                if (e.keyCode) {
+                    e.preventDefault();
+                    e.returnValue = false;
+                }
+            });
+        });
+        
+        // 우측 클릭 방지
+        document.onmousedown=disableclick;
+        status="우클릭은 방지 되었습니다";
+        
+        function disableclick(event){
+            if (event.button==2) {
+                alert(status);
+                return false;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="정부24 로고">
+        </div>
+        <div class="user-info">
+            <span>안녕하세요, 사용자님</span>
+            <button id="loginBtn">로그인</button>
+        </div>
+    </header>
+
+    <!-- 알림 배너 -->
+    <div class="notification-banner" id="notificationBanner">
+        <p>긴급 알림: 새로운 정부 정책이 발표되었습니다. 자세히 알아보기</p>
+        <button class="close-btn" id="closeNotificationBtn">X</button>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">정보</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <section class="hero-banner">
+            <h1>정부24에 오신 것을 환영합니다!</h1>
+            <p>온라인 서비스를 통해 다양한 정부 서비스를 이용해 보세요.</p>
+            <button>서비스 이용하기</button>
+        </section>
+
+        <section class="services">
+            <h2>주요 서비스</h2>
+            <div class="service-item">
+                <img src="service1.png" alt="서비스 1">
+                <h3>온라인 민원 서비스</h3>
+                <p>빠르고 간편한 민원 신청 서비스</p>
+                <button>바로가기</button>
+            </div>
+            <div class="service-item">
+                <img src="service2.png" alt="서비스 2">
+                <h3>주민등록등본 발급</h3>
+                <p>주민등록등본을 온라인으로 발급받으세요</p>
+                <button>바로가기</button>
+            </div>
+            <div class="service-item">
+                <img src="service3.png" alt="서비스 3">
+                <h3>정부 공공기관 정보</h3>
+                <p>다양한 정부 공공기관 정보를 확인하세요</p>
+                <button>바로가기</button>
+            </div>
+        </section>
+
+        <section class="popular-services">
+            <h2>인기 서비스</h2>
+            <ul>
+                <li><a href="#">가족관계증명서 발급</a></li>
+                <li><a href="#">출생신고</a></li>
+                <li><a href="#">사망신고</a></li>
+                <li><a href="#">이혼신고</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">개인정보 처리방침</a> |
+                <a href="#">이용약관</a> |
+                <a href="#">사이트맵</a>
+            </div>
+            <p>&copy; 2025 정부24. 모든 권리 보유.</p>
+        </div>
+    </footer>
+<script type="text/javascript" language="javascript">
+    // 모바일 웹 주소창 숨기기
+    window.addEventListener('load', function() {}, false);
+
+    <script src="script.js"></script>
+</body>
+</html>
