@@ -2,32 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0073e6">
     <title>정부24 모바일 웹사이트</title>
-    <link rel="stylesheet" href="main.css">
-    <script type="text/javascript">
-        // F12 버튼 방지
-        $(document).ready(function(){
-            $(document).bind('keydown',function(e){
-                if (e.keyCode) {
-                    e.preventDefault();
-                    e.returnValue = false;
-                }
-            });
-        });
-        
-        // 우측 클릭 방지
-        document.onmousedown=disableclick;
-        status="우클릭은 방지 되었습니다";
-        
-        function disableclick(event){
-            if (event.button==2) {
-                alert(status);
-                return false;
-            }
-        }
-    </script>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- 헤더 -->
@@ -109,9 +90,6 @@
             <p>&copy; 2025 정부24. 모든 권리 보유.</p>
         </div>
     </footer>
-<script type="text/javascript" language="javascript">
-    // 모바일 웹 주소창 숨기기
-    window.addEventListener('load', function() {}, false);
 
     <script src="script.js"></script>
 </body>
