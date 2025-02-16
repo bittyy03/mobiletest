@@ -1,0 +1,248 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0073e6;
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .user-info span {
+    margin-right: 15px;
+}
+
+header .user-info button {
+    padding: 8px 15px;
+    background-color: white;
+    color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .user-info button:hover {
+    background-color: #f1f1f1;
+}
+
+/* 알림 배너 */
+.notification-banner {
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.notification-banner .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.notification-banner .close-btn:hover {
+    color: red;
+}
+
+/* 네비게이션 */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #004a8e;
+}
+
+/* 메인 콘텐츠 */
+main {
+    padding: 20px;
+}
+
+/* 히어로 배너 */
+.hero-banner {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.hero-banner h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.hero-banner p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.hero-banner button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-banner button:hover {
+    background-color: #f1f1f1;
+}
+
+/* 서비스 항목 */
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.service-item button {
+    padding: 7px 15px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-item button:hover {
+    background-color: #005bb5;
+}
+
+/* 인기 서비스 */
+.popular-services {
+    margin-top: 40px;
+}
+
+.popular-services ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.popular-services ul li {
+    margin-bottom: 10px;
+}
+
+.popular-services ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 16px;
+}
+
+.popular-services ul li a:hover {
+    color: #004a8e;
+}
+
+/* 푸터 */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #777;
+}
+
+/* 모바일 반응형 디자인 */
+@media (max-width: 600px) {
+    header .logo img {
+        height: 30px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-banner h1 {
+        font-size: 22px;
+    }
+
+    .hero-banner p {
+        font-size: 14px;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .footer-links {
+        font-size: 12px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+}
